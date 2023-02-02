@@ -5,59 +5,80 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTMLテスト</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/ststyle.css">
+  <title>cssテスト</title>
 </head>
 
 <body>
-  <header>
-    <h1>キャッチコピー</h1>
-  </header>
-  <h2>About</h2>
-  <p>
-    プCOACHTECH（コーチテック）はフリーランス特化型のオンラインコーチングプログラミングスクールです。<br>プログラミング未経験の方でも、<span>「独自の学習ノウハウ」</span>でフリーランスエンジニアを目指すことができます。
-  </p>
+  <div class="header">
+    <header>
+      <h1 class="header_text">キャッチコピー</h1>
+    </header>
+  </div>
 
-  <h2>ブログ</h2>
-  <img src="img/blog__eyecatch1.jpg" alt="画像">
-  <h3>コーチテックブログのタイトルがここに入ります。</h3>
-  <img src="img/blog__eyecatch2.jpg" alt="画像">
-  <h3>コーチテックのタイトルがここに入ります。</h3>
-  <img src="img/blog__eyecatch3.jpg" alt="画像">
-  <h3>コーチテックブログのタイトルがここに入ります。</h3>
+  <div class="content">
+    <div class="about">
+      <h2 class="about_tittle">About</h2>
+      <p class="about_main">
+        COACHTECH（コーチテック）はフリーランス特化型のオンラインコーチングプログラミングスクールです。<br>プログラミング未経験の方でも、<span
+          class="about_main-strong">「独自の学習ノウハウ」</span>でフリーランスエンジニアを目指すことができます。
+      </p>
+    </div>
 
-  <div>
-    <h2>問い合わせ</h2>
-    <form action="#" method="get">
-      <ul>
-        <li class="name">
-          <label>
-            名前　<input type="text" name="name">
-          </label>
-        </li>
-        <li class="email">
-          <label>
-            メールアドレス<input type="email" name="email">
-          </label>
-        </li>
-        <li class="select">
-          <label>
-            用件<select name="select">
-              <option value="広告掲載について">広告掲載について</option>
-              <option value="ここにテキストが入ります。">ここにテキストが入ります。
-              </option>
-            </select>
-          </label>
-        </li>
-        <li class="matter">
-          <label>
-            内容<textarea name="matter" cols="30" rows="10"></textarea>
-          </label>
-        </li>
-        <li class="button">
-          <button type="submit">削除</button>
-          <button type="submit">送信</button>
-        </li>
-      </ul>
+
+    <div class="blog">
+      <h2 class="blog_titlle">ブログ</h2>
+
+      <div class="blog-mainbox">
+        <div class="blog_main-box1">
+          <img class="blog_img-first" src="img/blog__eyecatch1.jpg" alt="画像">
+          <h3 class="blog_text-first">コーチテックブログのタイトルがここに入ります。</h3>
+        </div>
+        <div class="blog_main-box2">
+          <img class="blog_img-second" src="img/blog__eyecatch2.jpg" alt="画像">
+          <h3 class="blog_text-second">コーチテックのタイトルがここに入ります。</h3>
+        </div>
+        <div class="blog_main-box3">
+          <img class="blog_img-third" src="img/blog__eyecatch3.jpg" alt="画像">
+          <h3 class="blog_text-third">コーチテックブログのタイトルがここに入ります。</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form_test">
+    <h2 class="lead_form">問い合わせ</h2>
+
+    <form action="#">
+      <div class="test">
+        <div class="item">
+          <label class="label">名前</label>
+          <input type="text" class="inputs" name="name">
+        </div>
+
+        <div class="item">
+          <label class="label">メールアドレス</label>
+          <input type="text" class="inputs" name="email">
+        </div>
+
+        <div class="item">
+          <lable class="label">用件</lable>
+          <select name="content" class="select">
+            <option value="advert">広告掲載について</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label class="label">内容</label>
+          <textarea name="textarea" cols="30" rows="10" class="inputs"></textarea>
+        </div>
+      </div>
+      <div class="btn_area">
+        <input type="sumbit" value="削除" class="btn_del">
+        <input type="sumbit" value="送信" class="btn_sub">
+      </div>
+
     </form>
   </div>
 </body>
